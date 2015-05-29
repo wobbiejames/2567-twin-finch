@@ -8,6 +8,39 @@
 }
 /*incluceds width, height content and border. but not padding*/
 
+
+body, li{
+	font-family: 'Droid Sans', sans-serif;
+}
+
+header{
+	font-family: 'Libre Baskerville', serif;
+}
+
+.header{
+	background-color:#000000;
+	position:fixed;
+	width:100%;
+}
+
+#headerlogo{
+	width:200px;
+	height:auto;
+	padding:20px;
+}
+
+li {
+	display:inline-block;
+	color:#000000;
+	background-color:#00FFDA;
+	padding:10px 15px;
+	border-radius:20px;
+	float:right;
+	margin:10px;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
 .wrapper {
 	width:71.911%;
 	margin:0 auto;
@@ -15,7 +48,7 @@
 
 .row{
 	width:100%;
-	padding-bottom:20px;
+	padding-bottom:;
 }
 
 /*CLEAR FIX HACK more compatable with more browsers, forces element to clear children- expands to height of children, we want it to appear after its children, but only when working with a responsive grid*/
