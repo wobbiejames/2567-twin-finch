@@ -9,12 +9,28 @@
 /*incluceds width, height content and border. but not padding*/
 
 
-body, li{
+body{
 	font-family: 'Droid Sans', sans-serif;
+	background-image:url(../IMGS/concrete_seamless.png);
+	font-size:19px;
+	line-height:150%;
+}
+
+#hero{
+	padding-top:135px;
+}
+
+.herotext{
+	padding:100px 0;
+}
+
+#headerhero{
+	background-image:url(../IMGS/twin-finch-hero.jpg);
 }
 
 header{
 	font-family: 'Libre Baskerville', serif;
+	text-transform:uppercase;
 }
 
 .header{
@@ -29,16 +45,27 @@ header{
 	padding:20px;
 }
 
+h1{
+	font-size:3.68rem;
+	font-weight:bold;
+}
+
+h3{
+	font-size:2.12rem;
+	font-weight:100;
+}
+
 li {
 	display:inline-block;
 	color:#000000;
-	background-color:#00FFDA;
-	padding:10px 15px;
+	background-color:#FFFFFF;
+	padding:5px 10px;
 	border-radius:20px;
 	float:right;
-	margin:10px;
+	margin:5px;
 	text-transform:uppercase;
 	text-decoration:none;
+	font-size:10px;
 }
 
 .wrapper {
@@ -50,6 +77,27 @@ li {
 	width:100%;
 	padding-bottom:;
 }
+
+/* helper classes */
+.right {
+	float:right !important;
+}
+
+.center-block{
+	float:none !important;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.text-center{
+	text-align:center;
+}
+
+.img-responsive{
+	width:100%;
+	height:auto;
+}
+
 
 /*CLEAR FIX HACK more compatable with more browsers, forces element to clear children- expands to height of children, we want it to appear after its children, but only when working with a responsive grid*/
 
