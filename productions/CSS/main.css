@@ -60,7 +60,27 @@ blockquote{
 	font-family: 'Droid Sans', sans-serif;
 	color:#038989;
 	font-size: 2rem;
-	line-height:150%;
+	line-height:150%;	
+}
+
+blockquote p {
+	padding:20px 0 0 20px;
+	background:url(../IMGS/quotation.png) 0 0 no-repeat; 
+}
+
+blockquote footer{
+	margin-top: -35px;
+  	font-size: 1.5rem;
+}
+
+blockquote footer cite a {
+	text-decoration:none;
+	color:#038989;
+}
+
+blockquote footer cite a:hover {
+	text-decoration:none;
+	color:#98509F;
 }
 
 
@@ -92,6 +112,10 @@ li {
 	border:2px #000000;
 }
 
+#footer{
+	background-color:#000000;
+}
+
 
 /* helper classes */
 .right {
@@ -103,6 +127,13 @@ li {
 	margin-left:auto;
 	margin-right:auto;
 }
+
+.center{
+	float:none !important;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 
 .text-center{
 	text-align:center;
