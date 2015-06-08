@@ -12,8 +12,12 @@
 body{
 	font-family: 'Droid Sans', sans-serif;
 	background-image:url(../IMGS/concrete_seamless.png);
-	font-size:19px;
+	font-size:18px;
 	line-height:150%;
+}
+
+p{
+	font-size:.90rem;
 }
 
 #hero{
@@ -37,10 +41,11 @@ header{
 	background-color:#000000;
 	position:fixed;
 	width:100%;
+	z-index:10;
 }
 
 #headerlogo{
-	width:100px;
+	width:90px;
 	height:auto;
 	padding-top:20px;
 }
@@ -50,9 +55,19 @@ h1{
 	font-weight:bold;
 }
 
+h2{
+	font-size:3.68rem;
+	font-weight:bold;
+	padding-top: 75px;
+}
+
 h3{
 	font-size:2.12rem;
 	font-weight:100;
+}
+
+h4{
+	font-size:1.12rem;
 }
 
 blockquote{
@@ -61,15 +76,13 @@ blockquote{
 	color:#038989;
 	font-size: 2rem;
 	line-height:150%;	
-}
-
-blockquote p {
+	margin: 50px 0 100px 0;
+	background:url(../IMGS/quotation.png) 0 0 no-repeat;
 	padding:20px 0 0 20px;
-	background:url(../IMGS/quotation.png) 0 0 no-repeat; 
 }
 
 blockquote footer{
-	margin-top: -35px;
+	margin-top: -10px;
   	font-size: 1.5rem;
 }
 
@@ -83,22 +96,54 @@ blockquote footer cite a:hover {
 	color:#98509F;
 }
 
+iframe{
+	width:100%;
+	height:400px;
+	frameborder:0;
+}
 
-li {
+nav ul li {
 	display:inline-block;
-	color:#000000;
-	background-color:#FFFFFF;
+	background-color:#6FC8BE;
 	padding:5px 10px;
-	border-radius:20px;
+	border-radius:15px;
 	float:right;
 	margin:0px 5px 5px 5px;
 	text-transform:uppercase;
+	font-size:.55rem;
+}
+
+li{
+	display:inline-block;
+	float:right;
+	margin: 0px 5px 5px 5px;
+}
+
+nav ul li:hover{
+	background-color: #038989;
+}
+
+a{
 	text-decoration:none;
-	font-size:10px;
+	color:#000000;
+}
+
+a:hover{
+	color:#FFFFFF;
+}
+
+.buynow{
+	background-color:#FFFFFF;
+	border-radius:20px;
+	padding:5px 40px;
+}
+
+.buynow:hover{
+	background-color:#98509F;
 }
 
 .wrapper {
-	width:71.911%;
+	width:71.1112%;
 	margin:0 auto;
 }
 
@@ -107,14 +152,139 @@ li {
 	padding-bottom:;
 }
 
+.tumblrfeed{
+	width:500px;
+	height:400px;
+	background-color:#FFFFFF;
+}
+
+form{
+	padding:20px 75px;
+}
+
+.twitter-timeline{
+	width:50%;
+	height:400px;
+}
+
+.nameinput{
+	width:33.333%;
+}
+
+input{
+	border-radius:5px;
+	display:inline-block;
+	margin:0 20px 20px 0;
+}
+
+.emailinput{
+	display:block;
+	width:70.25%;
+	margin: 0 0 20px 0;
+}
+
+textarea{
+	border-radius:5px;
+	width:100%;
+	max-width:100%;
+	min-width:100%;
+	
+}
 .roast{
 	background-color:#6FC8BE;
+	padding:20px;
+	font-size:.75rem;
+}
+.special{
+	overflow:auto;
+}
+
+.last-roast{
+	background-color:#6FC8BE !important;
+	margin-top:10px !important;
+	padding: 20px 20px 20px !important;
+	font-size:.75rem;
+}
+
+.map, .form{
+	background-color:#6FC8BE;
 	border:2px #000000;
+	margin-top:50px;
+}
+
+.map{
+	padding-top:20px;
+	margin-bottom:75px;
+}
+
+.imgblk{
+	display:block;
 }
 
 #footer{
 	background-color:#000000;
+	overflow:auto;
 }
+
+#relative{
+	position:relative;
+}
+
+#ratingpic{
+	position:absolute;
+	width:75px;
+	left:-20px;
+	top:-20px;
+}
+
+.brewthecoffee{
+	background:url(../IMGS/coffeebg.jpg);
+	padding:50px 25px;
+}
+
+.brewthecoffee a{
+	color:#FFFFFF !important;
+}
+
+.brewthecoffee a:hover{
+	color:#6FC8BE !important;
+}
+
+
+
+
+.sprite{
+	float:right;
+	display:inline-block;
+	height:50px;
+	width:50px;
+}
+
+#fbsprite {
+	background:url(../IMGS/facebook-icon.png)0 0;
+}
+#fbsprite:hover {
+	background:url(../IMGS/facebook-icon.png)0 -56px;
+
+}
+
+#twtrsprite {
+	background:url(../IMGS/twitter-icon.png)0 0;
+}
+#twtrsprite:hover {
+	background:url(../IMGS/twitter-icon.png)0 -56px;
+
+}
+
+#instasprite {
+	background:url(../IMGS/instagram-icon.png)0 0;
+}
+#instasprite:hover {
+	background:url(../IMGS/instagram-icon.png)0 -56px;
+
+}
+
+
 
 
 /* helper classes */
@@ -122,13 +292,7 @@ li {
 	float:right !important;
 }
 
-.center-block{
-	float:none !important;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-.center{
+.center-block, center{
 	float:none !important;
 	margin-left:auto;
 	margin-right:auto;
@@ -144,6 +308,17 @@ li {
 	height:auto;
 }
 
+.sr-only {
+	display:none;
+}
+
+.floatleft{
+	float:left;
+}
+
+.floatright{
+	float:right;
+}
 
 /*CLEAR FIX HACK more compatable with more browsers, forces element to clear children- expands to height of children, we want it to appear after its children, but only when working with a responsive grid*/
 
@@ -157,7 +332,7 @@ li {
 
 [class*='col-'] {
 	float:left;
-	padding:0 20px 20px 0;
+	padding:10px 20px 20px 0;
 }
 
 [class*='col-']:last-of-type {

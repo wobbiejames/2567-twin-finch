@@ -11,22 +11,22 @@
 <body>
 <header class="header">
   <div class="wrapper">
-    <div class="row">
-      <div class="col-1-12"> <img src="IMGS/twin-finch-birds.png" alt="twin finch logo"/ id="headerlogo"> </div>
+    <div class="row" >
+      <div class="col-2-12"> <img src="IMGS/twin-finch-birds.png" alt="twin finch logo" id="headerlogo" /> </div>
       <div class="col-1-2 right">
-        <nav>
+        <nav class="smooth-scroll">
           <ul>
-            <li><a href="">contact us</a></li>
-            <li><a href="">our roasts</a></li>
-            <li><a href="">about us</a></li>
-            <li><a href="">home</a></li>
+            <li><a href="#connect">contact us</a></li>
+            <li><a href="#ourroasts">our roasts</a></li>
+            <li><a href="#aboutus">about us</a></li>
+            <li><a href="#home">home</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </div>
 </header>
-<div class="wrapper">
+<div class="wrapper"  id="home">
   <div class="row" id="hero">
     <div class="col-1-1" id="headerhero">
       <header class="herotext">
@@ -40,86 +40,102 @@
   <div class="row">
     <div class="col-10-12 center-block">
       <blockquote>
-        <p>this extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.</p>
+        this extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.
         <footer class="right">- <cite><a href="http://www.coffeereview.com/">Coffee Review</a></cite></footer>
       </blockquote>
     </div>
   </div>
-  <div class="row"> <img src="" alt="coffee span"/> </div>
+  <div class="row"> 
+  	<div class="col-1-1">
+    	<img src="IMGS/coffeebg.jpg" alt="coffee span" class="imgblk center-block" />
+    </div>
+  </div>
   <section>
-    <div class="row">
-      <div class="col-10-12">
+    <div class="row" id="aboutus">
+      <div class="col-10-12 center-block">
         <header>
-          <h2>about us</h2>
+          <h2 class="text-center">about us</h2>
         </header>
-        <p>twin finch roastery is small, dedicated, and highly focused on quality. we have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home</p>
+        <p class="text-center">twin finch roastery is small, dedicated, and highly focused on quality. we have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home</p>
       </div>
     </div>
   </section>
   <section>
-    <div class="row">
-      <div class="col-10-12">
+    <div class="row" id="ourroasts">
+      <div class="col-10-12 center-block">
         <header>
-          <h2>our roasts</h2>
+          <h2 class="text-center">our roasts</h2>
         </header>
-        <p>our coffee is roasted in a hot air, refractory lined with an extrodinary level of control.</p>
+        <p class="text-center">our coffee is roasted in a hot air, refractory lined with an extrodinary level of control.</p>
       </div>
     </div>
     <div class="row">
       <div class="col-7-12">
         <div class="row">
-          <div class="col-1-3 roast"> <img src="IMGS/evening_blend_packaging.jpg" alt="evening roast package" class="img-responsive"/> </div>
-          <div class="col-2-3 roast">
+          <div class="col-1-2 roast"> <img src="IMGS/evening_blend_packaging.jpg" alt="evening roast package" class="img-responsive"/> </div>
+          <div class="col-1-2 roast">
             <header>
-              <h4>evening oak</h4>
+              <h4 class="text-center">evening oak</h4>
             </header>
             <p>our featured roast of the season. pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup. </p>
             <p> eastern java, indonesia</p>
             <p>medium-dark</p>
             <p>1lb $19.95</p>
-            <a href="">buy now</a> </div>
+            <a href="" class="buynow">buy now</a> </div>
         </div>
       </div>
       <div class="col-5-12">
         <header>
-          <h3>brew the coffee</h3>
+          <h3 class="brewthecoffee"><a href="">brew the coffee</a></h3>
         </header>
         <p>the significance of relying on a high volume of hot air to roast coffee beans can't be understated. most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. the refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-1-4 roast">
-      <img src="IMGS/98rating.png" alt="rated a 98 by coffeereview.com"/>
+      <div class="col-1-4" id="relative">
+      <div class="roast text-center">
+      <img src="IMGS/98rating.png" alt="rated a 98 by coffeereview.com" id="ratingpic" />
       <img src="IMGS/house_blend_packaging.jpg" alt="house blend package" class="img-responsive"/>
         <header>
           <h4>finch house blend</h4>
         </header>
         <p>hint of citrus, complemented by flavors of dark chocolate, peanut and light petter notes.</p>
         <p>cajamarca &amp; moyomamba regions, peru</p>
-        <p>medium</p>
-        <p>1lb $17.95</p>
-        <a href="">buy now</a> </div>
-      <div class="col-1-4 roast"> 
+        <div class="special">
+        <p class="floatleft">medium</p>
+        <p class="floatright">1lb $17.95</p>
+        </div>
+        <a href="" class="buynow">buy now</a> </div>
+        </div>
+      <div class="col-1-4"> 
+      <div class="roast text-center">
       <img src="IMGS/sunrise_blend_package.jpg" alt="sunrise package" class="img-responsive"/>
         <header>
           <h4>sunrise</h4>
         </header>
         <p>light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
         <p>la chiapas, mexico</p>
-        <p>light</p>
-        <p>1lb $17.95</p>
-        <a href="">buy now</a> </div>
-      <div class="col-1-4 roast"> 
+        <div class="special">
+        <p class="floatleft">light</p>
+        <p class="floatright">1lb $17.95</p>
+        </div>
+        <a href="" class="buynow">buy now</a> </div>
+        </div>
+      <div class="col-1-4">
+      <div class="roast text-center"> 
       <img src="IMGS/midnight_blend_package.jpg" alt="midnight package" class="img-responsive"/>
         <header>
           <h4>midnight</h4>
         </header>
         <p>roasted into second crack for a big, bold and dark cup. beans display oil.</p>
         <p>latin america</p>
-        <p>dark</p>
-        <p>1lb $17.95</p>
-        <a href="">buy now</a> </div>
-      <div class="col-1-4 roast">
+        <div class="special">
+        <p class="floatleft">dark</p>
+        <p class="floatright">1lb $17.95</p>
+        </div>
+        <a href="" class="buynow">buy now</a> </div>
+      </div>
+      <div class="col-1-4 last-roast text-center">
       <img src="IMGS/espresso_blend_package.jpg" alt="espresso package" class="img-responsive"/>
         <header>
           <h4>espresso</h4>
@@ -127,52 +143,59 @@
         <p>clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
         <p>latin america, africa, indonesia</p>
         <p>1lb $19.95</p>
-        <a href="">buy now</a> </div>
-      <div>
-        <p>online orders usually ship quickly and arrive within three business days. we only ship the freshest coffee and your satisfaction is guaranteed. our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. we only ship whole bean, but will grind for you in-store per request.</p>
-      </div>
+        <a href="" class="buynow">buy now</a> </div>
+      
     </div>
+    <div class="row">
+    	<div class="col-1-1 text-center">
+        <p>online orders usually ship quickly and arrive within three business days. we only ship the freshest coffee and your satisfaction is guaranteed. our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. we only ship whole bean, but will grind for you in-store per request.</p>
+        </div>
+      </div>
   </section>
   <section>
-    <div class="row">
-      <header>
+    <div class="row"  id="connect">
+      <header class="col-1-1 text-center">
         <h2>connect with us</h2>
       </header>
       <div class="col-1-1">
-        <div>
-          <div>
-          	<a class="twitter-timeline" href="https://twitter.com/OQCoffee" data-widget-id="605831563939442688">Tweets by @OQCoffee</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <div class="row">
+          <div class="col-1-2">
+          	<div class="tumblrfeed"></div>
+            <p><a href="https://twitter.com/">follow us on twitter</a></p>
           </div>
-          <p><a href="">follow us on twitter</a></p>
-        </div>
-        <div>
-          <div>twitter feed</div>
-          <p><a href="">follow us on tumblr</a></p>
+          
+          <div class="col-1-2">
+          	<div class="tumblrfeed"></div>
+            <p><a href="https://tumblr.com/">follow us on tumblr</a></p>
+          </div>
+          
+
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-10-12" id="contactform">
+      <div class="col-10-12 center-block form" id="contactform">
         <form>
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName">
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName">
-          <label for="emailAddress">Email Address</label>
-          <input type="email" id="emailAddress">
+          <label for="firstName" class="sr-only">First Name</label>
+          <input type="text" id="firstName" value="First Name" class="nameinput">
+          <label for="lastName" class="sr-only">Last Name</label>
+          <input type="text" id="lastName" value="Last Name" class="nameinput">
+          
+          <label for="emailAddress" class="sr-only">Email Address</label>
+          <input type="email" id="emailAddress" class="emailinput" value="Email Address">
+          
           <textarea rows="5" placeholder="questions or comments? send us a message"></textarea>
           <label>
-            <input type="checkbox" value="check1">
+            <input type="checkbox" value="check1" class="floatleft">
             <!--"checked" to make a box automatically checked" (for example mailing list--> 
             join our mailing list </label>
-          <button type="submit">SUBMIT!</button>
+          <button type="submit" class="floatright">SUBMIT!</button>
         </form>
       </div>
     </div>
-    <div class="row">
+    <div class="row map">
     	<div class="col-10-12 center-block">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2686.8116491842384!2d-122.3624221!3d47.6686553!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490144aca2a307f%3A0x8a22a942f994d479!2s457+NW+Market+St%2C+Seattle%2C+WA+98107!5e0!3m2!1sen!2sus!4v1433363166987" width="860" height="400" frameborder="0" style="border:0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2686.8116491842384!2d-122.3624221!3d47.6686553!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490144aca2a307f%3A0x8a22a942f994d479!2s457+NW+Market+St%2C+Seattle%2C+WA+98107!5e0!3m2!1sen!2sus!4v1433363166987"></iframe>
           <p class="text-center">you can buy from us directly at our seattle storefront located at 457 nw market street.</p>
       </div>
     </div>
@@ -180,22 +203,24 @@
 </div>
 <footer id="footer">
   <div class="wrapper">
-    <div class="col-1-2">
-      <ul>
-        <li><a href=""><img src="" alt="facebook logo"/></a></li>
-        <li><a href=""><img src="" alt="twitter logo"/></a></li>
-        <li><a href=""><img src="" alt="tumblr logo"/></a></li>
-      </ul>
-      <nav>
+    <div class="col-1-1 right">
+      <nav class="smooth-scroll">
         <ul>
-          <li><a href="">home</a></li>
-          <li><a href="">about us</a></li>
-          <li><a href="">our roasts</a></li>
-          <li><a href="">contact us</a></li>
+          <li><a href="#home">home</a></li>
+          <li><a href="#aboutus">about us</a></li>
+          <li><a href="#ourroasts">our roasts</a></li>
+          <li><a href="#connect">contact us</a></li>
         </ul>
       </nav>
+      <ul>
+        <li><a class="sprite" id="fbsprite" href="https://www.facebook.com/"></a></li>
+        <li><a class="sprite" id="twtrsprite" href="https://twitter.com/"></a></li>
+        <li><a class="sprite" id="instasprite" href="https://instagram.com/"></a></li>
+      </ul>
     </div>
   </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src="JS/functions.js"></script>
 </body>
 </html>
